@@ -1,11 +1,11 @@
 def move(n,current,target,empty):
 	if(n==1):
-		print "from %d to %d" %(current, target)
+		print "move disk %d from %d to %d" %(n,current,target)
 		return;
 	
 	move(n-1,current,empty,target)
-	move(1,current,target,empty)
+	print "move disk %d from %d to %d" %(n,current,target)
 	move(n-1,empty,target,current)
 	
 
-move(4,1,2,3)
+move(3,1,2,3)
