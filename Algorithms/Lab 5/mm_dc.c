@@ -1,5 +1,8 @@
 #include "stdio.h"
 
+void printSquareMatrix(int a[][2], int n);
+void divideAndConquer(int[][2] matrixA, int[][2] matrixB);
+
 int main(int argc, char const *argv[]){
 	int a[2][2] = {{1,2},{3,4}};
 	printSquareMatrix(a,2);
